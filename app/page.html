@@ -16,6 +16,11 @@
   <!-- build:css(.tmp) styles/main.css -->
   <link rel="stylesheet" href="styles/main.css">
   <!-- endbuild -->
+  <style media="screen">
+  .text-center{
+    padding-top: 1em;
+  }
+  </style>
 </head>
 
 <body>
@@ -56,7 +61,7 @@
               <div class="form-group">
                 <input type="text" class="form-control" placeholder="photo search">
               </div>
-              <button type="submit" class="btn btn-default">search</button>
+              <button type="submit" class="btn btn-default glyphicon glyphicon-search"></button>
             </form>
           </div>
           <!-- /.navbar-collapse -->
@@ -71,9 +76,15 @@
           <div class="caption">
             Sky
           </div>
-          <a href="#" class="">
-            <img src="./images/image1.jpg" alt="..."  class="img-thumbnail">
-          </a>
+          <div>
+            <a href="#" class="">
+              <img src="./images/image1.jpg" alt="..."  class="img-thumbnail">
+            </a>
+          </div>
+          <div class="text-center">
+            <a href="#" class="btn btn-primary glyphicon glyphicon-pencil" role="button"></a>
+            <a href="#" class="btn btn-danger glyphicon glyphicon-trash" role="button"></a>
+          </div>
         </div>
       </div>
       <div class="col-xs-12 col-sm-6 col-md-3">
@@ -81,9 +92,15 @@
           <div class="caption">
             Sea
           </div>
-          <a href="#">
-            <img src="./images/image2.jpg" alt="..."  class="img-thumbnail">
-          </a>
+          <div>
+            <a href="#">
+              <img src="./images/image2.jpg" alt="..."  class="img-thumbnail">
+            </a>
+          </div>
+          <div class="text-center">
+            <a href="#" class="btn btn-primary glyphicon glyphicon-pencil" role="button"></a>
+            <a href="#" class="btn btn-danger glyphicon glyphicon-trash" role="button"></a>
+          </div>
         </div>
       </div>
       <div class="col-xs-12 col-sm-6 col-md-3">
@@ -91,9 +108,15 @@
           <div class="caption">
             Town
           </div>
-          <a href="#">
-            <img src="./images/image3.jpg" alt="..."  class="img-thumbnail">
-          </a>
+          <div>
+            <a href="#">
+              <img src="./images/image3.jpg" alt="..."  class="img-thumbnail">
+            </a>
+          </div>
+          <div class="text-center">
+            <a href="#" class="btn btn-primary glyphicon glyphicon-pencil" role="button"></a>
+            <a href="#" class="btn btn-danger glyphicon glyphicon-trash" role="button"></a>
+          </div>
         </div>
       </div>
       <div class="col-xs-12 col-sm-6 col-md-3">
@@ -101,9 +124,15 @@
           <div class="caption">
             Sunflower
           </div>
-          <a href="#">
-            <img src="./images/image4.jpg" alt="..."  class="img-thumbnail">
-          </a>
+          <div>
+            <a href="#">
+              <img src="./images/image4.jpg" alt="..."  class="img-thumbnail">
+            </a>
+          </div>
+          <div class="text-center">
+            <a href="#" class="btn btn-primary glyphicon glyphicon-pencil" role="button"></a>
+            <a href="#" class="btn btn-danger glyphicon glyphicon-trash" role="button"></a>
+          </div>
         </div>
       </div>
     </div>
@@ -133,6 +162,24 @@
 
   </div>
 
+  <!-- Modal -->
+  <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          <h4 class="modal-title" id="myModalLabel">Modal title</h4>
+        </div>
+        <div class="modal-body">
+          ...
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Save changes</button>
+        </div>
+      </div>
+    </div>
+  </div>
 
   <!-- build:js(.) scripts/vendor.js -->
   <!-- bower:js -->
